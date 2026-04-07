@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Games</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Brett Knowlton</h1>
+    <h2>Shall We Play a Game?</h2>
+    <!--Tabs-->
+    <div class="tabs">
+        <ul>
+            <li class="trigger" data-target="#cointoss">Coin Toss</li>
+            <li class="trigger" data-target="#guessing">Guessing Game</li>
+        </ul>
+        <div id="cointoss" class="content">
+            <h3>Toss a Coin</h3>
+            <form class="coin-form">
+                <input type="button" value="Heads" id="heads-button">
+                <input type="button" value="Tails" id="tails-button">
+            </form>
+
+            <img class="coin-image" src="img/both.jpg" alt="heads or tails?">
+            <div class="coin-outcomes"></div>
+        </div>
+        <div id="guessing" class="content">
+            <h3>Guessing Game</h3>
+            <p>A number between 1 and 100 has been chosen.<br> See if you can guess it in under 10 attempts!<br> You
+                will be
+                informed if your guess was too
+                low or too high.</p>
+
+            <form class="guess-form">
+                <label for="guess">Enter a guess:</label>
+                <input type="number" id="guess" name="guess" min="1" max="100" required>
+            </form>
+
+            <p id="attempts">
+
+            </p>
+            <p id="result">
+                <span></span>
+            </p>
+        </div>
+    </div>
+</body>
+
+
+<script src="src/tabs.js"></script>
+<script src="src/guess.js"></script>
+<script src="src/coin_toss.js"></script>
+
+</html>
