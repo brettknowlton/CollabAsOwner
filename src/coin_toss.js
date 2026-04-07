@@ -32,6 +32,8 @@ coin_buttons.forEach(item => {
         //update scores:
         if (selection_val == coinflip_val) {
             loss_win_counts[1] += 1;
+            //I am putting in changes here for the pull request
+            message = 'Shadowfax, show us the meaning of haste'
             message = `You chose wisely!`
         } else {
             loss_win_counts[0] += 1;
